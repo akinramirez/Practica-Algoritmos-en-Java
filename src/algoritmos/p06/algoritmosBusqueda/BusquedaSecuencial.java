@@ -12,11 +12,11 @@ public class BusquedaSecuencial {
     int dato;
     boolean band = false;
 
-    dato = 4;
+    dato = Integer.parseInt(JOptionPane.showInputDialog("Digite el número a buscar: "));
 
     //Algoritmo de la búsqueda Secuencial
     int i = 0;
-    while (i < 5 && band == false) {
+    while (i < 6 && band == false) {
       if (arreglo[i] == dato) {
         band = true;
       }
